@@ -1,0 +1,216 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE7]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+.cf {
+  zoom: 1; }
+
+.cf:after {
+  content: ' ';
+  display: block;
+  clear: both; }
+
+.w960 {
+  width: 960px;
+  margin: 0 auto; }
+
+ul, li {
+  list-style: none; }
+
+html {
+  font-size: 10px;
+  font-family: 'microsoft yahei';
+  font-weight: bold; }
+
+body {
+  width: 100%;
+  min-width: 1080px;
+  height: auto;
+  font-size: 16px;
+  background-color: #e8e3dc;
+  position: relative; }
+
+.hd {
+  height: auto; }
+  .hd .logo-wepay {
+    position: relative;
+    top: 20px;
+    left: 135px;
+    display: block;
+    width: 150px;
+    height: 41px;
+    z-index: 999;
+    background: transparent url(../img/images-rujia/logo-wepay.png) 0 0 no-repeat; }
+  .hd .banner {
+    position: relative;
+    top: -41px;
+    left: 0;
+    width: 100%;
+    max-height: 717px;
+    z-index: 1; }
+
+.bd {
+  margin-top: -41px;
+  height: 1075px;
+  background: #e8e3dc; }
+  .bd .detail, .bd .tips {
+    display: block;
+    text-align: center; }
+  .bd .detail {
+    color: #a89880;
+    font-size: 21px;
+    margin-bottom: 42px; }
+  .bd .qrcode {
+    display: block;
+    height: 334px;
+    width: 336px;
+    margin: 0 auto; }
+  .bd .tips {
+    color: #f06a42;
+    font-size: 25px;
+    margin-top: 31px; }
+  .bd .process {
+    position: relative; }
+    .bd .process h2 {
+      color: #f06a42;
+      margin-top: 62px;
+      font-size: 33.89px;
+      /* margin-top: 64px!important;margin-bottom: 36px!important; */ }
+    .bd .process .ico-arrow-down {
+      display: inline-block !important;
+      *display: inline !important;
+      zoom: 1 !important;
+      position: relative;
+      top: -29px;
+      left: 200px;
+      margin-left: 13px;
+      margin-top: 0px;
+      width: 32px;
+      height: 29px;
+      background: transparent url(../img/images-rujia/ico-arrow-down.png) 0 0 no-repeat; }
+    .bd .process img {
+      float: left; }
+    .bd .process .step {
+      margin-top: 9px; }
+    .bd .process .step-1 {
+      margin-left: 22px;
+      margin-right: 65px; }
+    .bd .process .step-2, .bd .process .step-3 {
+      margin-right: 65px; }
+    .bd .process .ls-md {
+      position: relative;
+      background: transparent url(../img/images-rujia/ico-ls-md.png) 0 0 no-repeat !important;
+      display: block;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      color: #e8e3dc; }
+    .bd .process p {
+      display: inline-block !important;
+      *display: inline !important;
+      zoom: 1 !important;
+      line-height: 24px;
+      text-align: center !important;
+      margin-top: 24px;
+      font-size: 18px;
+      /* font-family:'HiraginoSansGB'; */
+      color: #f06a42; }
+    .bd .process .show-1 {
+      width: 130px;
+      margin-left: 50px; }
+    .bd .process .show-2 {
+      width: 115px;
+      margin-left: 128px !important; }
+    .bd .process .show-3 {
+      width: 115px;
+      margin-left: 130px !important; }
+    .bd .process .show-4 {
+      width: 80px;
+      margin-left: 150px !important; }
+
+.ft {
+  height: auto;
+  background: #383c5c; }
+  .ft .border {
+    display: block;
+    width: 100%;
+    height: 17px;
+    background: #fff url(../img/images-rujia/img-border.png) 0 0 repeat !important; }
+  .ft h2 {
+    padding-top: 44px;
+    font-size: 33.89px;
+    color: #8f94be; }
+  .ft p {
+    color: #8f94be;
+    font-weight: normal;
+    font-size: 15px;
+    /* text-indent:-20px; */
+    margin-top: 2px;
+    margin-left: 38px;
+    line-height: 18px; }
+  .ft .ls-sm {
+    position: relative;
+    left: 8px;
+    top: 21px;
+    display: inline-block !important;
+    *display: inline !important;
+    zoom: 1 !important;
+    font-size: 15px;
+    font-weight: normal;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #383c5c;
+    background: transparent url(../img/images-rujia/ico-ls-sm.png) 0 0 no-repeat !important; }
+  .ft .fix {
+    padding-bottom: 62px; }

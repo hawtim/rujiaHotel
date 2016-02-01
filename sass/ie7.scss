@@ -1,0 +1,123 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE7]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+@charset "utf-8";
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities";
+@import "compass/utilities/sprites";
+
+.cf {zoom:1}
+.cf:after {content: ' '; display: block; clear: both;}
+.w960{width: 960px;margin: 0 auto;}
+ul,li{list-style: none;}
+
+html{
+	font-size: 10px;
+	font-family: 'microsoft yahei';
+	font-weight: bold;
+}
+body{
+	width: 100%;
+	min-width: 1080px;
+	height:auto;
+	font-size: 16px;
+	background-color: #e8e3dc;
+	position: relative;
+
+}
+.hd{
+	height: auto;
+	// min-height:717px;
+	// .w960{position: relative;}
+	.logo-wepay{
+		position: relative;
+		top:20px;
+		left:135px;
+		display: block;
+		width: 150px;
+		height: 41px;
+		z-index:999;
+		background: transparent url(../img/images-rujia/logo-wepay.png) 0 0 no-repeat;
+	}
+	.banner{position: relative;top:-41px;left: 0;width: 100%;max-height:717px;z-index: 1;}
+}
+.bd{margin-top: -41px;height: 1075px;background: #e8e3dc;
+	.detail, .tips{display: block; text-align: center;}
+	.detail{color:#a89880; font-size:21px;margin-bottom: 42px;}
+	.qrcode{display: block;height:334px; width: 336px;margin: 0 auto;}
+	.tips{color: #f06a42;font-size:25px;margin-top: 31px;}
+	.process{
+		position: relative;
+		h2{color: #f06a42;margin-top: 62px;font-size: 33.89px;/* margin-top: 64px!important;margin-bottom: 36px!important; */}
+		.ico-arrow-down{display: inline-block!important;*display: inline!important;zoom: 1!important;position: relative;top: -29px;left: 200px;margin-left: 13px;margin-top: 0px;width: 32px;height: 29px;background: transparent url(../img/images-rujia/ico-arrow-down.png) 0 0 no-repeat;}
+		img{float: left;}
+		.step{margin-top: -28+37px;}
+		.step-1{margin-left: 22px;margin-right: 65px;}
+		.step-2, .step-3{margin-right: 65px;}
+		.ls-md{position: relative;background: transparent url(../img/images-rujia/ico-ls-md.png) 0 0 no-repeat!important;
+			display: block;width: 36px;height: 36px;line-height: 36px;
+			text-align:center;color: #e8e3dc;}
+
+		p{
+			display: inline-block!important;
+			*display: inline!important;
+			zoom: 1!important;
+			line-height: 24px;
+			text-align: center!important;
+			margin-top: 24px;
+			font-size:18px;
+			/* font-family:'HiraginoSansGB'; */
+			color: #f06a42;}
+		.show-1{
+			width: 130px;
+			margin-left: 50px;
+		}
+		.show-2{
+			// position: relative;top: 0;left: 134px;
+			width: 115px;
+			margin-left: 120+8px!important;
+		}
+		.show-3{
+			// position: relative;top: 0;left: 134px;
+			width: 115px;
+			margin-left: 130px!important;
+		}
+		.show-4{
+			width: 80px;
+			// position: relative;top: 0;left: 134px;
+			margin-left: 150px!important;
+		}
+	}
+}
+.ft{
+	height: auto;background: #383c5c;
+	.border{display: block;width: 100%;height: 17px;background: #fff url(../img/images-rujia/img-border.png) 0 0 repeat!important;}
+	h2{padding-top: 44px; font-size: 33.89px;color: #8f94be;}
+	// ul{width: 960px;height:auto;margin-top: 0px;}
+	p{color: #8f94be;
+		font-weight: normal;
+		font-size: 15px;
+		/* text-indent:-20px; */
+		margin-top: 2px;
+		margin-left: 38px;
+		line-height: 18px;}
+	.ls-sm{
+		position: relative;
+		left: 8px;
+		top:21px;
+		display: inline-block!important;
+		*display: inline!important;
+		zoom: 1!important;
+		font-size:15px;
+		font-weight: normal;
+		width: 20px;
+		height: 20px;
+		line-height: 20px;
+		text-align:center;
+		color: #383c5c;
+		background:transparent url(../img/images-rujia/ico-ls-sm.png) 0 0 no-repeat!important;}
+	.fix{padding-bottom: 62px;}
+}
