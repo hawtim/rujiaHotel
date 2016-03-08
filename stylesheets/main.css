@@ -63,6 +63,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 ul, li {
   list-style: none; }
 
+img {
+  border: 0; }
+
+.no-copy {
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none; }
+
+.text-copy {
+  -webkit-user-select: text;
+  user-select: text; }
+
+::selection {
+  color: #fff;
+  background-color: pink; }
+
+::-moz-selection {
+  color: #fff;
+  background-color: pink; }
+
+::-webkit-selection {
+  color: #fff;
+  background-color: pink; }
+
 /*=============文档自带样式=============*/
 html {
   font-size: 10px;
@@ -74,7 +101,7 @@ body {
   min-width: 1080px;
   height: auto;
   font-size: 16px;
-  background-color: #e8e3dc;
+  background: #E8E3DC;
   position: relative; }
 
 .hd {
@@ -87,7 +114,10 @@ body {
     width: 150px;
     height: 41px;
     z-index: 999;
-    background: transparent url(../img/images-rujia/logo-wepay.png) 0 0 no-repeat; }
+    background: url(../img/images-rujia/icons.png) no-repeat;
+    height: 41px;
+    width: 150px;
+    background-position: -88px 0; }
   .hd .banner {
     position: relative;
     top: -41px;
@@ -99,12 +129,12 @@ body {
 .bd {
   margin-top: -41px;
   height: 1075px;
-  background: #e8e3dc; }
+  background: #E8E3DC; }
   .bd .detail, .bd .tips {
     display: block;
     text-align: center; }
   .bd .detail {
-    color: #a89880;
+    color: #A89880;
     font-size: 21px;
     margin-bottom: 42px; }
   .bd .qrcode {
@@ -113,13 +143,13 @@ body {
     width: 336px;
     margin: 0 auto; }
   .bd .tips {
-    color: #f06a42;
+    color: #F06A42;
     font-size: 25px;
     margin-top: 31px; }
   .bd .process {
     position: relative; }
     .bd .process h2 {
-      color: #f06a42;
+      color: #F06A42;
       margin-top: 62px;
       font-size: 33.89px;
       /* margin-top: 64px!important;margin-bottom: 36px!important; */ }
@@ -132,16 +162,40 @@ body {
       margin-top: 0px;
       width: 32px;
       height: 29px;
-      background: transparent url(../img/images-rujia/ico-arrow-down.png) 0 0 no-repeat; }
+      background: url(../img/images-rujia/icons.png) no-repeat;
+      height: 29px;
+      width: 32px;
+      background-position: -20px 0; }
     .bd .process img {
       float: left; }
     .bd .process .step {
       margin-top: 9px; }
+    .bd .process [class*="step"] {
+      display: inline-block; }
     .bd .process .step-1 {
       margin-left: 22px;
-      margin-right: 65px; }
+      margin-right: 65px;
+      background: url(../img/images-rujia/icons.png) no-repeat;
+      height: 328px;
+      width: 183px;
+      background-position: -197px -64px; }
     .bd .process .step-2, .bd .process .step-3 {
-      margin-right: 65px; }
+      margin-right: 60px; }
+    .bd .process .step-2 {
+      background: url(../img/images-rujia/icons.png) no-repeat;
+      height: 328px;
+      width: 183px;
+      background-position: 0 -406px; }
+    .bd .process .step-3 {
+      background: url(../img/images-rujia/icons.png) no-repeat;
+      height: 328px;
+      width: 183px;
+      background-position: -197px -410px; }
+    .bd .process .step-4 {
+      background: url(../img/images-rujia/icons.png) no-repeat;
+      height: 328px;
+      width: 183px;
+      background-position: 0 -62px; }
     .bd .process .ls-md {
       margin: 0 auto;
       font-size: 25px;
@@ -150,11 +204,11 @@ body {
       height: 36px;
       line-height: 36px;
       text-align: center;
-      color: #e8e3dc;
+      color: #E8E3DC;
       -moz-border-radius: 18px;
       -webkit-border-radius: 18px;
       border-radius: 18px;
-      background: #f06a42; }
+      background: #F06A42; }
     .bd .process p {
       display: inline-block;
       *display: inline;
@@ -164,7 +218,7 @@ body {
       margin-top: 24px;
       font-size: 18px;
       /* font-family:'HiraginoSansGB'; */
-      color: #f06a42; }
+      color: #F06A42; }
     .bd .process .show-1 {
       width: 130px;
       margin-left: 50px; }
@@ -180,22 +234,23 @@ body {
 
 .ft {
   height: auto;
-  background: #383c5c; }
+  background: #383C5C; }
   .ft .border {
     display: block;
+    border: 0;
     width: 100%;
     height: 17px;
-    background: #fff url(../img/images-rujia/img-border.png) 0 0 repeat; }
+    background: transparent url(../img/images-rujia/img-border.png) 0 0 repeat; }
   .ft h2 {
     padding-top: 44px;
     font-size: 33.89px;
-    color: #8f94be; }
+    color: #8F94BE; }
   .ft ul {
     width: 960px;
     height: auto;
     margin-top: 0px; }
   .ft p {
-    color: #8f94be;
+    color: #8F94BE;
     font-weight: normal;
     font-size: 15px;
     /* text-indent:-20px; */
@@ -213,10 +268,10 @@ body {
     height: 20px;
     line-height: 20px;
     text-align: center;
-    color: #383c5c;
+    color: #383C5C;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
-    background: #095fd3; }
+    background: #095FD3; }
   .ft .fix {
     padding-bottom: 62px; }

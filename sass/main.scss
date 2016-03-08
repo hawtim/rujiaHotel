@@ -4,87 +4,121 @@
 @import "compass/css3";
 @import "compass/utilities";
 @import "compass/utilities/sprites";
+@mixin icons{background:url(../img/images-rujia/icons.png) no-repeat; }
+@mixin ico-ls-sm{height:20px;width:20px;background-position: 0 0;}
+@mixin ico-arrow-down{height:29px;width:32px;background-position: -20px 0;}
+@mixin ico-ls-md{height:36px;width:36px;background-position: -52px 0;}
+@mixin logo-wepay{height:41px;width:150px;background-position: -88px 0;}
+@mixin img-process-4{height:328px;width:183px;background-position: 0 -62px;}
+@mixin img-process-1{height:328px;width:183px;background-position: -197px -64px;}
+@mixin img-process-2{height:328px;width:183px;background-position: 0 -406px;}
+@mixin img-process-3{height:328px;width:183px;background-position: -197px -410px;}
+
 /*=================公用资源=============*/
 .cf {zoom:1}
 .cf:after {content: ' '; display: block; clear: both;}
 .w960{width: 960px;margin: 0 auto;}
 ul,li{list-style: none;}
-
+img{border:0;}
+.no-copy{
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.text-copy{-webkit-user-select:text;user-select:text;}
+::selection {color:#fff; background-color:pink;}
+::-moz-selection { color:#fff; background-color:pink;}
+::-webkit-selection { color:#fff; background-color:pink;}
 
 
 /*=============文档自带样式=============*/
 html{
-	font-size: 10px;
-	font-family: '微软雅黑';
-	font-weight: bold;
+    font-size: 10px;
+    font-family: '微软雅黑';
+    font-weight: bold;
 }
 body{
-	width: 100%;
-	min-width: 1080px;
-	height:auto;
-	font-size: 16px;
-	background-color: #e8e3dc;
-	position: relative;
+    width: 100%;
+    min-width: 1080px;
+    height:auto;
+    font-size: 16px;
+    background: #E8E3DC;
+    position: relative;
 
 }
 .hd{
-	height: auto;
-	// .w960{position: relative;}
-	.logo-wepay{
-		position: relative;
-		top:20px;
-		left:135px;
-		display: block;
-		width: 150px;
-		height: 41px;
-		z-index:999;
-		background: transparent url(../img/images-rujia/logo-wepay.png) 0 0 no-repeat;
-	}
-	.banner{position: relative;top:-41px;left: 0;width: 100%;max-height:717px;z-index: 1;}
+    height: auto;
+    // .w960{position: relative;}
+    .logo-wepay{
+        position: relative;
+        top:20px;
+        left:135px;
+        display: block;
+        width: 150px;
+        height: 41px;
+        z-index:999;
+        // background: transparent url(../img/images-rujia/logo-wepay.png) 0 0 no-repeat;
+        @include icons;
+        @include logo-wepay;
+    }
+    .banner{position: relative;top:-41px;left: 0;width: 100%;max-height:717px;z-index: 1;}
 }
-.bd{margin-top: -41px;height: 1075px;background: #e8e3dc;
-	.detail, .tips{display: block; text-align: center;}
-	.detail{color:#a89880; font-size:21px;margin-bottom: 42px;}
-	.qrcode{display: block;height:334px; width: 336px;margin: 0 auto;}
-	.tips{color: #f06a42;font-size:25px;margin-top: 31px;}
-	.process{
-		position: relative;
-		h2{color: #f06a42;margin-top: 62px;font-size: 33.89px;/* margin-top: 64px!important;margin-bottom: 36px!important; */}
-		.ico-arrow-down{display: block;position: relative;top: -29px;left: 200px;margin-left: 13px;margin-top: 0px;width: 32px;height: 29px;background: transparent url(../img/images-rujia/ico-arrow-down.png) 0 0 no-repeat;}
-		img{float: left;}
-		.step{margin-top: -28+37px;}
-		.step-1{margin-left: 22px;margin-right: 65px;}
-		.step-2, .step-3{margin-right: 65px;}
-		.ls-md{margin: 0 auto;font-size:25px;display: block;width: 36px;height: 36px;line-height: 36px;text-align:center;color: #e8e3dc;@include border-radius(18px);background: #f06a42;}
-		p{display: inline-block;*display: inline;zoom: 1; line-height: 24px;text-align: center;margin-top: 24px;font-size:18px;/* font-family:'HiraginoSansGB'; */color: #f06a42;}
-		.show-1{
-			width: 130px;
-			margin-left: 50px;
-		}
-		.show-2{
-			// position: relative;top: 0;left: 134px;
-			width: 115px;
-			margin-left: 120px;
-		}
-		.show-3{
-			// position: relative;top: 0;left: 134px;
-			width: 115px;
-			margin-left: 134-8px;
-		}
-		.show-4{
-			width: 80px;
-			// position: relative;top: 0;left: 134px;
-			margin-left: 155-4px;
-		}
-	}
+.bd{margin-top: -41px;height: 1075px;background: #E8E3DC;
+    .detail, .tips{display: block; text-align: center;}
+    .detail{color:#A89880; font-size:21px;margin-bottom: 42px;}
+    .qrcode{display: block;height:334px; width: 336px;margin: 0 auto;}
+    .tips{color: #F06A42;font-size:25px;margin-top: 31px;}
+    .process{position: relative;
+        h2{color: #F06A42;margin-top: 62px;font-size: 33.89px;/* margin-top: 64px!important;margin-bottom: 36px!important; */}
+        .ico-arrow-down{display: block;position: relative;top: -29px;left: 200px;margin-left: 13px;margin-top: 0px;width: 32px;height: 29px;@include icons;@include ico-arrow-down;}
+        img{float: left;}
+        .step{margin-top: -28+37px;}
+        [class*="step"]{display: inline-block;}
+        .step-1{margin-left: 22px;margin-right: 65px;@include icons;@include img-process-1;}
+        .step-2, .step-3{margin-right: 60px;}
+        .step-2{@include icons;@include img-process-2;}
+        .step-3{@include icons;@include img-process-3;}
+        .step-4{@include icons;@include img-process-4;}
+        .ls-md{margin: 0 auto;font-size:25px;display: block;width: 36px;height: 36px;line-height: 36px;text-align:center;color: #E8E3DC;@include border-radius(18px);background: #F06A42;}
+        p{display: inline-block;*display: inline;zoom: 1; line-height: 24px;text-align: center;margin-top: 24px;font-size:18px;/* font-family:'HiraginoSansGB'; */color: #F06A42;}
+        .show-1{width: 130px;margin-left: 50px;}
+        .show-2{
+            // position: relative;top: 0;left: 134px;
+            width: 115px;
+            margin-left: 120px;
+        }
+        .show-3{
+            // position: relative;top: 0;left: 134px;
+            width: 115px;
+            margin-left: 134-8px;
+        }
+        .show-4{
+            width: 80px;
+            // position: relative;top: 0;left: 134px;
+            margin-left: 155-4px;
+        }
+    }
 }
 .ft{
-	height: auto;background: #383c5c;
-	.border{display: block;width: 100%;height: 17px;background: #fff url(../img/images-rujia/img-border.png) 0 0 repeat;}
-	h2{padding-top: 44px; font-size: 33.89px;color: #8f94be;}
-	ul{width: 960px;height:auto;margin-top: 0px;}
-	p{color: #8f94be;font-weight: normal;font-size: 15px;/* text-indent:-20px; */margin-top: 2px;margin-left: 38px;line-height: 18px;}
-	.ls-sm{position: relative;left: 8px;top:21px;display: block;font-size:15px;font-weight: normal;width: 20px;height: 20px;line-height: 20px;text-align:center;color: #383c5c;@include border-radius(50%);background:#095fd3 ;}
-	.fix{padding-bottom: 62px;}
+    height: auto;background: #383C5C;
+    .border{
+        display: block;
+        border:0;
+        // border-top:1px solid #E8E3DC;
+        // border-bottom: 1px solid #383C5C;
+        // border-left:0;
+        // border-right:0;
+        width: 100%;
+        height: 17px;
+        background: transparent url(../img/images-rujia/img-border.png) 0 0 repeat;
+    }
+    h2{padding-top: 44px; font-size: 33.89px;color: #8F94BE;}
+    ul{width: 960px;height:auto;margin-top: 0px;}
+    p{color: #8F94BE;font-weight: normal;font-size: 15px;/* text-indent:-20px; */margin-top: 2px;margin-left: 38px;line-height: 18px;}
+    .ls-sm{position: relative;left: 8px;top:21px;display: block;font-size:15px;font-weight: normal;width: 20px;height: 20px;line-height: 20px;text-align:center;color: #383C5C;@include border-radius(50%);background:#095FD3 ;}
+    .fix{padding-bottom: 62px;}
 }
 

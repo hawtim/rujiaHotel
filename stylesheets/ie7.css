@@ -75,7 +75,7 @@ body {
   min-width: 1080px;
   height: auto;
   font-size: 16px;
-  background-color: #e8e3dc;
+  background-color: #E8E3DC;
   position: relative; }
 
 .hd {
@@ -88,7 +88,7 @@ body {
     width: 150px;
     height: 41px;
     z-index: 999;
-    background: transparent url(../img/images-rujia/logo-wepay.png) 0 0 no-repeat; }
+    background: transparent url(../img/images-rujia/icons.png) -202px 0 no-repeat; }
   .hd .banner {
     position: relative;
     top: -41px;
@@ -105,7 +105,7 @@ body {
     display: block;
     text-align: center; }
   .bd .detail {
-    color: #a89880;
+    color: #A89880;
     font-size: 21px;
     margin-bottom: 42px; }
   .bd .qrcode {
@@ -114,13 +114,13 @@ body {
     width: 336px;
     margin: 0 auto; }
   .bd .tips {
-    color: #f06a42;
+    color: #F06A42;
     font-size: 25px;
     margin-top: 31px; }
   .bd .process {
     position: relative; }
     .bd .process h2 {
-      color: #f06a42;
+      color: #F06A42;
       margin-top: 62px;
       font-size: 33.89px;
       /* margin-top: 64px!important;margin-bottom: 36px!important; */ }
@@ -135,7 +135,7 @@ body {
       margin-top: 0px;
       width: 32px;
       height: 29px;
-      background: transparent url(../img/images-rujia/ico-arrow-down.png) 0 0 no-repeat; }
+      background: transparent url(../img/images-rujia/icons.png) -88px 0 no-repeat; }
     .bd .process img {
       float: left; }
     .bd .process .step {
@@ -147,13 +147,13 @@ body {
       margin-right: 65px; }
     .bd .process .ls-md {
       position: relative;
-      background: transparent url(../img/images-rujia/ico-ls-md.png) 0 0 no-repeat !important;
+      background: transparent url(../img/images-rujia/icons.png) -150px 0 no-repeat !important;
       display: block;
       width: 36px;
       height: 36px;
       line-height: 36px;
       text-align: center;
-      color: #e8e3dc; }
+      color: #E8E3DC; }
     .bd .process p {
       display: inline-block !important;
       *display: inline !important;
@@ -163,7 +163,7 @@ body {
       margin-top: 24px;
       font-size: 18px;
       /* font-family:'HiraginoSansGB'; */
-      color: #f06a42; }
+      color: #F06A42; }
     .bd .process .show-1 {
       width: 130px;
       margin-left: 50px; }
@@ -188,9 +188,9 @@ body {
   .ft h2 {
     padding-top: 44px;
     font-size: 33.89px;
-    color: #8f94be; }
+    color: #8F94BE; }
   .ft p {
-    color: #8f94be;
+    color: #8F94BE;
     font-weight: normal;
     font-size: 15px;
     /* text-indent:-20px; */
@@ -210,7 +210,7 @@ body {
     height: 20px;
     line-height: 20px;
     text-align: center;
-    color: #383c5c;
-    background: transparent url(../img/images-rujia/ico-ls-sm.png) 0 0 no-repeat !important; }
+    color: #383C5C;
+    background: transparent url(../img/images-rujia/icons.png) 0 0 no-repeat !important; }
   .ft .fix {
     padding-bottom: 62px; }
