@@ -1,38 +1,26 @@
-<h2>项目三  Ver1.1 2016.03.03</h2>
 <h2>此页面为仅为学习所做Demo</h2>
-<h2>如家酒店与微信支付合作活动demo页面</h2>
 <a href = "http://htmlpreview.github.io/?https://github.com/hawtim/rujiaHotel/blob/master/index.html">预览链接,请点击</a>
+<h2>项目三  Ver1.1 2016.03.03</h2>
 <h2>改进之处</h2>
 <ul>
 	<li>减少span和div无语义标签</li>
-	<li>自适应布局的优化</li>
-	<li>性能优化</li>
+	<li>修复在ie78下加载的圆角图片位置错误</li>
+	<li>性能优化，减少请求，压缩png</li>
 	<li>Demo预览</li>
 </ul>
-
+<h2>如家酒店与微信支付合作活动demo页面</h2>
 <ul>
 	<li>
-		<p>页面开发是在chrome中完成的，之后通过优雅降级的方式逐步针对ie系列浏览器进行测试和修复,
-页面兼容至ie7+,在index.html的页面头部使用meta标签</p>
-		<code>
-			<pre><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"></pre>
-		</code>
+		<p>页面开发是在chrome中完成的，之后通过优雅降级的方式逐步针对ie系列浏览器进行测试和修复,页面兼容至ie7+,在index.html的页面头部使用meta标签<br>meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"</p>
 	</li>
-	<li></li>
-	<li></li>
+	<li>页面在谷歌dev tool中使用移动设备视图会有span+background出现边框的情况出现的情况，在PC下没有问题</li>
 </ul>
-
-学习之处：更好掌握兼容IE并优化请求
-
-
-
 
 
 <h2>项目三 Ver1.0 2016.02.10</h2>
 <h3>目录</h3>
 [背景介绍](#背景介绍)<br>
 [Demo介绍](#Demo介绍)<br>
-[使用说明](#使用说明)<br>
 [获取代码](#获取代码)<br>
 [问题分析](#问题分析)<br>
 [其他](#其他)
@@ -48,17 +36,9 @@
 <a name="Demo介绍"></a>
 	<h3>Demo介绍</h3>
 	<ul>
-	    <li>如家酒店活动Demo页主要在于学习和提升在PC端页面的兼容适配的开发经验</li>
-	    <li>校园卡Demo页面在于提升消除表单默认样式，表单验证，的使用经验</li>
+	    <li>如家酒店活动Demo页主要在于学习和提升在PC端页面的兼容适配的开发经验，更好的掌握兼容IE并优化请求</li>
+	    <li>校园卡Demo页面目的在于提高消除表单默认样式，表单验证，</li>
 	    <li>EMS签注Demo页面在于提高在移动端页面的开发经验，接触滑屏js，CSS3动画等更加复杂的开发技术</li>
-	</ul>
-<a name="使用说明"></a>
-	<h3>使用说明</h3>
-	<ul>
-	    <li></li>
-	    <li></li>
-	    <li></li>
-	    <li></li>
 	</ul>
 <a name="获取代码"></a>
 	<h3>获取代码</h3>
@@ -71,12 +51,12 @@
 	<h3>问题分析</h3>
 <ol>
 	<li>
-		<h4>1.在html文档里用img标签和用其他标签的background:url()来表现图片在实际生产应用的过程中主要的区分是什么？
-		比如在html文档可以方便后台类似说CMS(内容管理系统)直接修改图片。而用css实现的图片后台更新比较困难？</h4>
+		<h4>在html文档里用img标签和用其他标签的background:url()来表现图片在实际应用中主要的区分是什么？
+		比如使用img标签可以方便CMS(内容管理系统)直接修改图片，而用css实现的图片后台更新比较困难？</h4>
 		<p class="answer">&nbsp;</p>
 	</li>
 	<li>
-		<h4>&nbsp;</h4>
+		<h4>在酒店Demo中。页面在谷歌dev tool中使用移动设备视图会有span+background出现边框的情况出现的情况，在PC下没有问题。</h4>
 		<p class="answer">&nbsp;</p>
 	</li>
 	<li>
