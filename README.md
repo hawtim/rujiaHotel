@@ -59,18 +59,6 @@
 		<h4>在酒店Demo中。页面在谷歌dev tool中使用移动设备视图会有span+background出现边框的情况出现的情况，在PC下没有问题。</h4>
 		<p class="answer">&nbsp;</p>
 	</li>
-	<li>
-		<h4>&nbsp;</h4>
-		<p class="answer">&nbsp;</p>
-	</li>
-	<li>
-		<h4>&nbsp;</h4>
-		<p class="answer">&nbsp;</p>
-	</li>
-	<li>
-		<h4>&nbsp;</h4>
-		<p class="answer">&nbsp;</p>
-	</li>
 </ol>
 
 <a name="其他"></a>
