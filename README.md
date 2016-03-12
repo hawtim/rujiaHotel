@@ -1,5 +1,7 @@
-<h2>此页面为仅为学习所做Demo</h2>
 <h2>项目三  Ver1.1 2016.03.03</h2>
+<h2>此页面为仅为学习所做Demo</h2>
+<h2>如家酒店与微信支付合作活动demo页面</h2>
+<a href = "http://htmlpreview.github.io/?https://github.com/hawtim/rujiaHotel/blob/master/index.html">预览链接,请点击</a>
 <h2>改进之处</h2>
 <ul>
 	<li>减少span和div无语义标签</li>
@@ -8,13 +10,12 @@
 	<li>Demo预览</li>
 </ul>
 
-<h2>如家酒店与微信支付合作活动页面</h2>
 <ul>
 	<li>
-		<p>页面开发是在chrome中完成的，之后通过优雅降级的方式逐步针对ie系列浏览器进行测试和修复
-页面兼容至ie7，在index.html的页面头部使用meta标签</p>
+		<p>页面开发是在chrome中完成的，之后通过优雅降级的方式逐步针对ie系列浏览器进行测试和修复,
+页面兼容至ie7+,在index.html的页面头部使用meta标签</p>
 		<code>
-			<pre><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7,chrome=1"></pre>
+			<pre><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"></pre>
 		</code>
 	</li>
 	<li></li>
@@ -23,7 +24,7 @@
 
 学习之处：更好掌握兼容IE并优化请求
 
-<a href = "http://htmlpreview.github.io/?https://github.com/hawtim/rujiaHotel/blob/master/index.html">预览链接,请点击</a>
+
 
 
 
