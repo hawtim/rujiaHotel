@@ -53,26 +53,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   zoom: 1; }
 
 .cf:after {
-  content: ' ';
-  display: block;
-  clear: both; }
+  clear: both;
+  content: " ";
+  display: block; }
 
 .w960 {
-  width: 960px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 960px; }
 
-ul, li {
+ul,
+li {
   list-style: none; }
 
 img {
   border: 0; }
 
 .no-copy {
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
   -khtml-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none; }
 
 .text-copy {
@@ -80,30 +81,30 @@ img {
   user-select: text; }
 
 ::selection {
-  color: #fff;
-  background-color: pink; }
+  background-color: pink;
+  color: #fff; }
 
 ::-moz-selection {
-  color: #fff;
-  background-color: pink; }
+  background-color: pink;
+  color: #fff; }
 
 ::-webkit-selection {
-  color: #fff;
-  background-color: pink; }
+  background-color: pink;
+  color: #fff; }
 
 /*=============文档自带样式=============*/
 html {
+  font-family: "微软雅黑";
   font-size: 10px;
-  font-family: '微软雅黑';
   font-weight: bold; }
 
 body {
+  position: relative;
   width: 100%;
-  min-width: 1080px;
   height: auto;
-  font-size: 16px;
-  background: #E8E3DC;
-  position: relative; }
+  min-width: 1080px;
+  background: #e8e3dc;
+  font-size: 16px; }
 
 .hd {
   height: auto; }
@@ -111,14 +112,14 @@ body {
     position: relative;
     top: 20px;
     left: 135px;
+    z-index: 999;
     display: block;
     width: 150px;
     height: 41px;
-    z-index: 999;
     background: url(../img/images-rujia/icons.png) no-repeat;
+    background-position: -88px 0;
     height: 41px;
-    width: 150px;
-    background-position: -88px 0; }
+    width: 150px; }
   .hd .banner {
     position: relative;
     top: -41px;
@@ -128,45 +129,46 @@ body {
     z-index: 1; }
 
 .bd {
-  margin-top: -41px;
   height: 1075px;
-  background: #E8E3DC; }
-  .bd .detail, .bd .tips {
+  margin-top: -41px;
+  background: #e8e3dc; }
+  .bd .detail,
+  .bd .tips {
     display: block;
     text-align: center; }
   .bd .detail {
-    color: #A89880;
-    font-size: 21px;
-    margin-bottom: 42px; }
+    margin-bottom: 42px;
+    color: #a89880;
+    font-size: 21px; }
   .bd .qrcode {
     display: block;
-    height: 334px;
     width: 336px;
+    height: 334px;
     margin: 0 auto; }
   .bd .tips {
-    color: #F06A42;
-    font-size: 25px;
-    margin-top: 31px; }
+    margin-top: 31px;
+    color: #f06a42;
+    font-size: 25px; }
   .bd .process {
     position: relative; }
     .bd .process h2 {
-      color: #F06A42;
       margin-top: 62px;
       font-size: 33.89px;
-      /* margin-top: 64px!important;margin-bottom: 36px!important; */ }
+      /* margin-top: 64px!important;margin-bottom: 36px!important; */
+      color: #f06a42; }
     .bd .process .ico-arrow-down {
-      display: block;
       position: relative;
       top: -29px;
       left: 200px;
+      display: block;
+      height: 29px;
+      width: 32px;
       margin-left: 13px;
-      margin-top: 0px;
-      width: 32px;
-      height: 29px;
+      margin-top: 0;
       background: url(../img/images-rujia/icons.png) no-repeat;
+      background-position: -20px 0;
       height: 29px;
-      width: 32px;
-      background-position: -20px 0; }
+      width: 32px; }
     .bd .process img {
       float: left; }
     .bd .process .step {
@@ -177,49 +179,50 @@ body {
       margin-left: 22px;
       margin-right: 65px;
       background: url(../img/images-rujia/icons.png) no-repeat;
+      background-position: -197px -64px;
       height: 328px;
-      width: 183px;
-      background-position: -197px -64px; }
-    .bd .process .step-2, .bd .process .step-3 {
+      width: 183px; }
+    .bd .process .step-2,
+    .bd .process .step-3 {
       margin-right: 60px; }
     .bd .process .step-2 {
       background: url(../img/images-rujia/icons.png) no-repeat;
+      background-position: 0 -406px;
       height: 328px;
-      width: 183px;
-      background-position: 0 -406px; }
+      width: 183px; }
     .bd .process .step-3 {
       background: url(../img/images-rujia/icons.png) no-repeat;
+      background-position: -197px -410px;
       height: 328px;
-      width: 183px;
-      background-position: -197px -410px; }
+      width: 183px; }
     .bd .process .step-4 {
       background: url(../img/images-rujia/icons.png) no-repeat;
+      background-position: 0 -62px;
       height: 328px;
-      width: 183px;
-      background-position: 0 -62px; }
+      width: 183px; }
     .bd .process .ls-md {
-      margin: 0 auto;
-      font-size: 25px;
       display: block;
       width: 36px;
-      height: 36px;
-      line-height: 36px;
-      text-align: center;
-      color: #E8E3DC;
       -moz-border-radius: 18px;
       -webkit-border-radius: 18px;
       border-radius: 18px;
-      background: #F06A42; }
+      height: 36px;
+      margin: 0 auto;
+      color: #e8e3dc;
+      line-height: 36px;
+      font-size: 25px;
+      text-align: center;
+      background: #f06a42; }
     .bd .process p {
-      display: inline-block;
       *display: inline;
       zoom: 1;
-      line-height: 24px;
-      text-align: center;
+      display: inline-block;
       margin-top: 24px;
+      color: #f06a42;
       font-size: 18px;
       /* font-family:'HiraginoSansGB'; */
-      color: #F06A42; }
+      line-height: 24px;
+      text-align: center; }
     .bd .process .show-1 {
       width: 130px;
       margin-left: 50px; }
@@ -234,45 +237,45 @@ body {
       margin-left: 151px; }
 
 .ft {
-  height: auto;
-  background: #383C5C; }
+  background: #383c5c;
+  height: auto; }
   .ft .border {
     display: block;
-    border: 0;
     width: 100%;
     height: 17px;
-    background: transparent url(../img/images-rujia/img-border.png) 0 0 repeat; }
+    background: transparent url(../img/images-rujia/img-border.png) 0 0 repeat;
+    border: 0; }
   .ft h2 {
     padding-top: 44px;
-    font-size: 33.89px;
-    color: #8F94BE; }
+    color: #8f94be;
+    font-size: 33.89px; }
   .ft ul {
     width: 960px;
     height: auto;
     margin-top: 0px; }
   .ft p {
-    color: #8F94BE;
-    font-weight: normal;
-    font-size: 15px;
-    /* text-indent:-20px; */
     margin-top: 2px;
     margin-left: 38px;
-    line-height: 18px; }
+    font-size: 15px;
+    /* text-indent:-20px; */
+    line-height: 18px;
+    font-weight: normal;
+    color: #8f94be; }
   .ft .ls-sm {
     position: relative;
-    left: 8px;
     top: 21px;
+    left: 8px;
     display: block;
-    font-size: 15px;
-    font-weight: normal;
     width: 20px;
     height: 20px;
     line-height: 20px;
+    color: #383c5c;
+    font-size: 15px;
+    font-weight: normal;
     text-align: center;
-    color: #383C5C;
+    background: #095fd3;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
-    border-radius: 50%;
-    background: #095FD3; }
+    border-radius: 50%; }
   .ft .fix {
     padding-bottom: 62px; }
